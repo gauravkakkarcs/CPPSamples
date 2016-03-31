@@ -24,7 +24,6 @@ public:
 	{
 		visitor.visit(static_cast<T &>(*this));
 	}
-	virtual ~BaseVisitable() {}
 };
 
 //derived starts here
