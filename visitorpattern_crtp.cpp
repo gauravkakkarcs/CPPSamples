@@ -60,10 +60,10 @@ class CallVisitor: public Visitor<Blue>, public Visitor<Red>, public Visitor<Gre
         b.see_the_sky();
     }
 
-    virtual void visit(Red &r) {
+    void visit(Red &r) {
         r.see_the_sun();
     }
-    virtual void visit(Green &g) {
+    void visit(Green &g) {
         g.see_the_grass();
     }
 
