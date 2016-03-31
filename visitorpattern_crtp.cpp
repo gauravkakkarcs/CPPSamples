@@ -20,7 +20,7 @@ template <typename T>
 class BaseVisitable
 {
 public:
-	virtual void accept(Visitor<T> &visitor)
+	void accept(Visitor<T> &visitor)
 	{
 		visitor.visit(static_cast<T &>(*this));
 	}
